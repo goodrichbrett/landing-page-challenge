@@ -1,0 +1,146 @@
+.parent {
+	color: white;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	height: 100vh;
+}
+
+.left {
+	grid-area: 1 / 1 / 2 / 2;
+	background-color: #571717;
+}
+.right {
+	grid-area: 1 / 2 / 2 / 6;
+	background-image: url('./assets/Coding-Challenge-Image.png');
+	background-size: cover;
+}
+
+.socials {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+h1,
+h2 {
+	font-family: 'Merriweather', serif;
+}
+
+h1 {
+	font-size: 12vw;
+	position: absolute;
+	bottom: 30%;
+	left: 5%;
+}
+
+.more-details {
+	position: absolute;
+	bottom: 25%;
+	left: 6%;
+}
+
+.more-details > p {
+	margin: 0;
+	display: inline;
+	font-size: 2vw;
+}
+
+#plus-sign {
+	cursor: pointer;
+	display: inline;
+	position: relative;
+	bottom: 10px;
+}
+
+.details {
+	visibility: hidden;
+	background-color: white;
+	color: black;
+	/* width: auto; */
+	height: auto;
+	max-width: 30vw;
+	padding: 4% 3%;
+	position: absolute;
+	bottom: 12%;
+	left: 8%;
+}
+
+.details > h2 {
+	font-size: 6vw;
+	color: #571717;
+}
+
+.details > p {
+	line-height: 1.7rem;
+}
+
+hr {
+	border: 1px solid #571717;
+}
+
+.details > #read-more {
+	text-decoration: none;
+	padding: 15px 30px;
+	text-align: center;
+	color: white;
+	background-image: linear-gradient(
+		90deg,
+		rgba(87, 23, 23, 1) 35%,
+		rgba(255, 255, 255, 1) 200%
+	);
+	display: inline-block;
+	margin-top: 3rem;
+}
+
+.details > #x {
+	text-decoration: none;
+	color: #571717;
+	font-weight: 700;
+	font-size: 1.2vw;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 10px 15px;
+}
+
+@media (min-width: 500px) {
+	.details {
+		max-width: 85vw;
+		bottom: 20%;
+	}
+	.details > #x {
+		font-size: 7vw;
+	}
+}
+
+@media (min-width: 768px) {
+	.details {
+		max-width: 70vw;
+	}
+	.details > #x {
+		font-size: 4vw;
+	}
+}
+
+@media (min-width: 992px) {
+	.details {
+		max-width: 50vw;
+	}
+	.details > #x {
+		font-size: 3vw;
+	}
+}
+
+/* @media (min-width: 1200px) {
+	.details {
+		max-width: 35vw;
+	}
+	.details > #x {
+		font-size: 1.2vw;
+	}
+} */
